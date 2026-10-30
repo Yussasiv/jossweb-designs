@@ -1,9 +1,10 @@
-service.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore professional website design services and pricing from JossWeb Designs.">
 <title>Services & Pricing | JossWeb Designs</title>
 
 <style>
@@ -21,11 +22,14 @@ body {
 }
 
 header {
-  padding: 22px 8%;
+  padding: 20px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
   border-bottom: 1px solid #26364a;
+  background: #0b1d33;
 }
 
 .logo {
@@ -34,9 +38,20 @@ header {
   font-weight: bold;
 }
 
-header a {
-  color: #f0c75e;
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  color: #ffffff;
   text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f0c75e;
 }
 
 .hero {
@@ -144,6 +159,10 @@ header a {
   margin-bottom: 12px;
 }
 
+.contact p {
+  color: #cbd5e1;
+}
+
 footer {
   text-align: center;
   padding: 22px;
@@ -152,12 +171,27 @@ footer {
 }
 
 @media (max-width: 600px) {
+  header {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
   .hero h1 {
     font-size: 30px;
   }
 
-  header {
-    padding: 18px 5%;
+  .pricing {
+    padding: 25px 6% 50px;
   }
 }
 </style>
@@ -167,7 +201,12 @@ footer {
 
 <header>
   <div class="logo">JossWeb Designs</div>
-  <a href="index.html">Home</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services & Pricing</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
@@ -248,4 +287,4 @@ footer {
 
 </body>
   </html>
-    
+  
