@@ -1,0 +1,251 @@
+service.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Pricing | JossWeb Designs</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #071426;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+header {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #26364a;
+}
+
+.logo {
+  color: #f0c75e;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+header a {
+  color: #f0c75e;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 20px 35px;
+}
+
+.hero h1 {
+  color: #f0c75e;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #cbd5e1;
+  max-width: 600px;
+  margin: auto;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 35px 8% 65px;
+}
+
+.card {
+  background: #10233b;
+  border: 1px solid #34445a;
+  border-radius: 14px;
+  padding: 30px 24px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #f0c75e;
+}
+
+.card h2 {
+  color: #f0c75e;
+  margin-bottom: 12px;
+}
+
+.price {
+  color: #f0c75e;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 12px 0 3px;
+}
+
+.usd {
+  color: #cbd5e1;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.card li {
+  padding: 8px 0;
+  border-bottom: 1px solid #293c54;
+}
+
+.card li::before {
+  content: "✓ ";
+  color: #f0c75e;
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  background: #f0c75e;
+  color: #071426;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 7px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.button:hover {
+  background: #ffffff;
+}
+
+.note {
+  text-align: center;
+  padding: 0 20px 55px;
+  color: #cbd5e1;
+}
+
+.contact {
+  background: #10233b;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.contact h2 {
+  color: #f0c75e;
+  margin-bottom: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #aab6c5;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  header {
+    padding: 18px 5%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">JossWeb Designs</div>
+  <a href="index.html">Home</a>
+</header>
+
+<section class="hero">
+  <h1>Our Services & Pricing</h1>
+  <p>
+    Professional websites designed to help your business
+    stand out online. Choose the package that suits you.
+  </p>
+</section>
+
+<section class="pricing">
+
+  <div class="card">
+    <h2>Starter Website</h2>
+    <p>Perfect for individuals and small businesses.</p>
+    <div class="price">₦75,000</div>
+    <div class="usd">$75 USD</div>
+    <ul>
+      <li>One-page website</li>
+      <li>Mobile-friendly design</li>
+      <li>Business information</li>
+      <li>Contact button</li>
+      <li>Basic website layout</li>
+    </ul>
+    <a class="button" href="mailto:primepathng@gmail.com?subject=Starter%20Website%20Enquiry">Choose Package</a>
+  </div>
+
+  <div class="card">
+    <h2>Business Website</h2>
+    <p>For growing businesses that need more features.</p>
+    <div class="price">₦150,000</div>
+    <div class="usd">$150 USD</div>
+    <ul>
+      <li>Up to 5 pages</li>
+      <li>Professional design</li>
+      <li>WhatsApp and email links</li>
+      <li>Services and pricing section</li>
+      <li>Mobile-friendly layout</li>
+    </ul>
+    <a class="button" href="mailto:primepathng@gmail.com?subject=Business%20Website%20Enquiry">Choose Package</a>
+  </div>
+
+  <div class="card">
+    <h2>Premium Website</h2>
+    <p>For brands that want a more complete online presence.</p>
+    <div class="price">₦300,000</div>
+    <div class="usd">$300 USD</div>
+    <ul>
+      <li>Up to 10 pages</li>
+      <li>Premium custom design</li>
+      <li>Advanced contact features</li>
+      <li>Portfolio or gallery</li>
+      <li>Basic SEO setup</li>
+    </ul>
+    <a class="button" href="mailto:primepathng@gmail.com?subject=Premium%20Website%20Enquiry">Choose Package</a>
+  </div>
+
+</section>
+
+<div class="note">
+  Prices are starting prices. Domain, hosting, maintenance
+  and advanced features may cost extra.
+  <br>
+  International customers can pay in US dollars.
+</div>
+
+<section class="contact">
+  <h2>Ready to Build Your Website?</h2>
+  <p>Let's bring your business online.</p>
+  <a class="button" href="mailto:primepathng@gmail.com?subject=Website%20Design%20Enquiry">
+    Contact JossWeb Designs
+  </a>
+</section>
+
+<footer>
+  © 2026 JossWeb Designs. All Rights Reserved.
+</footer>
+
+</body>
+  </html>
+    
