@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Portfolio | JossWeb Designs</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071426;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b1d33;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      color: #f0c75e;
+      font-size: 23px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #f0c75e;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 7% 55px;
+    }
+
+    .hero h1 {
+      color: #f0c75e;
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #d4dbe5;
+    }
+
+    .portfolio {
+      padding: 35px 7% 75px;
+    }
+
+    .portfolio h2 {
+      text-align: center;
+      color: #f0c75e;
+      font-size: 29px;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      text-align: center;
+      color: #c5ceda;
+      margin-bottom: 35px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #10243d;
+      border: 1px solid #263c57;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .preview {
+      min-height: 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .restaurant {
+      background: linear-gradient(135deg, #5b3020, #d49a53);
+    }
+
+    .fashion {
+      background: linear-gradient(135deg, #171717, #80634c);
+    }
+
+    .business {
+      background: linear-gradient(135deg, #123c54, #278c9d);
+    }
+
+    .preview h3 {
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+
+    .preview p {
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    .project-info {
+      padding: 20px;
+    }
+
+    .project-info h3 {
+      color: #f0c75e;
+      margin-bottom: 8px;
+    }
+
+    .project-info p {
+      color: #c5ceda;
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 5px 10px;
+      border: 1px solid #f0c75e;
+      border-radius: 20px;
+      color: #f0c75e;
+      font-size: 11px;
+    }
+
+    .contact {
+      background: #0b1d33;
+      text-align: center;
+      padding: 55px 7%;
+    }
+
+    .contact h2 {
+      color: #f0c75e;
+      margin-bottom: 12px;
+    }
+
+    .contact p {
+      color: #d4dbe5;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #f0c75e;
+      color: #071426;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 6px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aab5c4;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">JossWeb Designs</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services & Pricing</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Our Creative Portfolio</h1>
+    <p>
+      Explore sample website concepts showing how JossWeb Designs
+      can help businesses build a strong and professional online presence.
+    </p>
+  </section>
+
+  <section class="portfolio">
+    <h2>Our Sample Projects</h2>
+    <p class="intro">Creative website concepts for different industries.</p>
+
+    <div class="projects">
+
+      <div class="project">
+        <div class="preview restaurant">
+          <h3>THE GRAND TABLE</h3>
+          <p>RESTAURANT & DINING</p>
+        </div>
+        <div class="project-info">
+          <h3>Restaurant Website</h3>
+          <p>A sample concept for restaurants, lounges and food businesses.</p>
+          <span class="tag">SAMPLE CONCEPT</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="preview fashion">
+          <h3>ELITE FASHION</h3>
+          <p>STYLE • QUALITY • CLASS</p>
+        </div>
+        <div class="project-info">
+          <h3>Fashion Store Website</h3>
+          <p>A sample concept for clothing brands and online fashion stores.</p>
+          <span class="tag">SAMPLE CONCEPT</span>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="preview business">
+          <h3>PRIME BUSINESS</h3>
+          <p>YOUR BUSINESS. YOUR FUTURE.</p>
+        </div>
+        <div class="project-info">
+          <h3>Business Website</h3>
+          <p>A sample concept for companies and professional service providers.</p>
+          <span class="tag">SAMPLE CONCEPT</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Let's Build Your Website</h2>
+    <p>Ready to take your business online? Contact JossWeb Designs today.</p>
+
+    <a class="button" href="https://wa.me/2347055450446?text=Hello%2C%20I%20am%20interested%20in%20your%20web%20design%20services.">
+      Chat on WhatsApp
+    </a>
+
+    <a class="button" href="mailto:primepathng@gmail.com">
+      Send Us an Email
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 JossWeb Designs. All Rights Reserved.</p>
+  </footer>
+
+</body>
+  </html>
+  
