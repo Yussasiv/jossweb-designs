@@ -4,276 +4,168 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services & Pricing | JossWeb Designs</title>
-
+<meta name="description" content="JossWeb Designs creates modern, professional websites for businesses and brands worldwide.">
+<title>JossWeb Designs | Premium Web Design Agency</title>
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #071426;
-  color: #c6d0df;
-  line-height: 1.7;
-}
-
-header {
-  background: #10233c;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #f0c75e;
-}
-
-.logo {
-  color: #f0c75e;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-nav {
-  margin-top: 12px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 7px;
-  display: inline-block;
-}
-
-nav a:hover {
-  color: #f0c75e;
-}
-
-.hero {
-  text-align: center;
-  padding: 75px 20px;
-  background: linear-gradient(135deg, #071426, #10294a);
-}
-
-.hero h1 {
-  color: #f0c75e;
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  max-width: 650px;
-  margin: auto;
-}
-
-section {
-  padding: 55px 20px;
-  text-align: center;
-}
-
-h2 {
-  color: #f0c75e;
-  font-size: 29px;
-  margin-bottom: 25px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #10233c;
-  padding: 25px;
-  border: 1px solid #263d59;
-  border-radius: 12px;
-  text-align: left;
-}
-
-.card h3 {
-  color: #f0c75e;
-  margin-bottom: 12px;
-}
-
-.card p {
-  margin-bottom: 10px;
-}
-
-.price {
-  font-size: 25px;
-  color: #f0c75e;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.btn {
-  display: inline-block;
-  background: #f0c75e;
-  color: #071426;
-  padding: 12px 22px;
-  margin-top: 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: white;
-}
-
-.note {
-  margin-top: 25px;
-  font-size: 14px;
-  color: #aebbd0;
-}
-
-.contact {
-  background: #0c1c31;
-}
-
-.contact p {
-  margin: 8px 0;
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #10233c;
-  border-top: 1px solid #263d59;
-}
-
-footer span {
-  color: #f0c75e;
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--gold:#f0c75e;--navy:#071426;--card:#10233c;--muted:#b7c3d5}
+body{font-family:Arial,sans-serif;background:var(--navy);color:#f4f6fa;line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 7%;background:#091a30;border-bottom:1px solid #24364c;position:sticky;top:0;z-index:100}
+.logo{color:var(--gold);font-size:21px;font-weight:bold}
+.logo span{color:white}
+nav{display:flex;gap:22px}
+nav a{font-size:14px;color:#d8dfeb}
+nav a:hover{color:var(--gold)}
+.hero{min-height:570px;padding:110px 8%;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse at 80% 30%,#17375d 0%,transparent 55%),linear-gradient(135deg,#071426,#10294a)}
+.tag{color:var(--gold);letter-spacing:3px;font-size:12px;font-weight:bold;margin-bottom:18px}
+.hero h1{max-width:780px;font-size:clamp(38px,7vw,68px);line-height:1.15;margin-bottom:24px}
+.hero h1 span{color:var(--gold)}
+.hero p{color:var(--muted);max-width:590px;margin-bottom:30px}
+.buttons{display:flex;flex-wrap:wrap;gap:15px}
+.button{display:inline-block;padding:13px 23px;border-radius:5px;background:var(--gold);color:#071426;font-weight:bold;transition:.3s}
+.button:hover{transform:translateY(-3px);background:white}
+.button-outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+section{padding:85px 8%}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:34px;margin-bottom:10px}
+.section-title h2 span{color:var(--gold)}
+.section-title p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
+.card{background:var(--card);padding:30px;border:1px solid #263d59;border-radius:10px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--gold)}
+.card .symbol{font-size:32px;margin-bottom:15px}
+.card h3{color:var(--gold);margin-bottom:12px}
+.card p{color:var(--muted);font-size:14px}
+.portfolio-card{min-height:190px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(135deg,#142d4d,#0b192c)}
+.portfolio-card small{color:var(--gold);margin-bottom:10px}
+.price-card{text-align:center}
+.price-card h3{font-size:23px}
+.price-card .price{font-size:27px;color:white;font-weight:bold;margin:15px 0}
+.price-card .price span{color:var(--gold)}
+.price-card ul{list-style:none;color:var(--muted);margin:20px 0}
+.price-card li{padding:5px}
+.about{background:#0c1c31;text-align:center}
+.about-content{max-width:750px;margin:auto;color:var(--muted)}
+.contact{text-align:center}
+.contact p{color:var(--muted);margin:15px auto 25px}
+footer{background:#091a30;border-top:1px solid #24364c;text-align:center;padding:30px 15px;color:var(--muted);font-size:13px}
+footer strong{color:var(--gold)}
+.whatsapp{position:fixed;bottom:22px;right:20px;background:#20c76a;color:white;padding:13px 18px;border-radius:30px;font-weight:bold;box-shadow:0 4px 15px #0008;z-index:200}
+@media(max-width:700px){
+header{flex-direction:column;gap:12px}
+nav{justify-content:center;flex-wrap:wrap;gap:13px}
+nav a{font-size:12px}
+.hero{padding:85px 7%;min-height:520px}
+section{padding:65px 7%}
+.section-title h2{font-size:28px}
 }
 </style>
 </head>
-
 <body>
 
 <header>
-  <div class="logo">JossWeb Designs</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="#services">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<a href="#home" class="logo">JW<span> | JossWeb Designs</span></a>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="services.html#pricing">Pricing</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<div class="hero">
-  <h1>Our Services & Pricing</h1>
-  <p>Professional website design solutions to help businesses, brands and individuals grow online.</p>
-  <a href="#services" class="btn">Explore Our Services</a>
+<main>
+<section class="hero" id="home">
+<div class="tag">CREATIVITY • TECHNOLOGY • EXCELLENCE</div>
+<h1>We Build Digital Experiences That <span>Move Businesses Forward.</span></h1>
+<p>We create beautiful, modern and professional websites that help businesses build trust, attract customers and grow their presence online.</p>
+<div class="buttons">
+<a href="#services" class="button">Explore Our Services</a>
+<a href="#contact" class="button button-outline">Start Your Project</a>
 </div>
+</section>
 
 <section id="services">
-  <div class="container">
-    <h2>What We Offer</h2>
+<div class="section-title">
+<h2>Our <span>Services</span></h2>
+<p>Creative digital solutions designed to grow your business.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="symbol">🌐</div><h3>Business Websites</h3><p>Professional websites that showcase your business and build customer confidence.</p></div>
+<div class="card"><div class="symbol">🛒</div><h3>Online Stores</h3><p>Beautiful online shopping experiences for products and growing brands.</p></div>
+<div class="card"><div class="symbol">💼</div><h3>Portfolio Websites</h3><p>Showcase your skills, achievements and professional work online.</p></div>
+<div class="card"><div class="symbol">📱</div><h3>Responsive Design</h3><p>Websites designed to work smoothly on phones, tablets and computers.</p></div>
+</div>
+</section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Business Websites</h3>
-        <p>Professional websites that introduce your business and attract customers.</p>
-      </div>
-
-      <div class="card">
-        <h3>Online Stores</h3>
-        <p>Beautiful online shop designs to display products and help customers shop.</p>
-      </div>
-
-      <div class="card">
-        <h3>Portfolio Websites</h3>
-        <p>Showcase your skills, experience and projects with a professional portfolio.</p>
-      </div>
-
-      <div class="card">
-        <h3>Restaurant Websites</h3>
-        <p>Display menus, services, contact details and restaurant information online.</p>
-      </div>
-
-      <div class="card">
-        <h3>Mobile-Friendly Design</h3>
-        <p>Websites designed to look good on phones, tablets and computers.</p>
-      </div>
-
-      <div class="card">
-        <h3>Website Updates</h3>
-        <p>Improve existing websites with fresh content, layouts and design updates.</p>
-      </div>
-    </div>
-  </div>
+<section id="portfolio">
+<div class="section-title">
+<h2>Our <span>Portfolio</span></h2>
+<p>Explore the types of digital experiences we can create.</p>
+</div>
+<div class="cards">
+<div class="card portfolio-card"><small>PROJECT CONCEPT 01</small><h3>Business Website</h3><p>A modern online presence for a professional company.</p></div>
+<div class="card portfolio-card"><small>PROJECT CONCEPT 02</small><h3>Fashion Store</h3><p>A stylish shopping experience for a fashion brand.</p></div>
+<div class="card portfolio-card"><small>PROJECT CONCEPT 03</small><h3>Personal Portfolio</h3><p>A professional platform for showcasing creative work.</p></div>
+</div>
 </section>
 
 <section id="pricing">
-  <div class="container">
-    <h2>Our Website Packages</h2>
+<div class="section-title">
+<h2>Our <span>Pricing</span></h2>
+<p>Flexible website packages for Nigerian and international clients.</p>
+</div>
+<div class="cards">
+<div class="card price-card">
+<h3>Starter</h3><div class="price">Custom <span>Quote</span></div>
+<ul><li>Professional landing page</li><li>Mobile-friendly design</li><li>Contact section</li><li>Basic website setup</li></ul>
+<a href="#contact" class="button">Request Price</a>
+</div>
+<div class="card price-card">
+<h3>Business</h3><div class="price">Custom <span>Quote</span></div>
+<ul><li>Multi-section website</li><li>Professional design</li><li>Services and portfolio</li><li>Contact integration</li></ul>
+<a href="#contact" class="button">Request Price</a>
+</div>
+<div class="card price-card">
+<h3>Premium</h3><div class="price">Custom <span>Quote</span></div>
+<ul><li>Advanced website design</li><li>Custom features</li><li>Online business solutions</li><li>Personalized setup</li></ul>
+<a href="#contact" class="button">Request Price</a>
+</div>
+</div>
+<p style="text-align:center;color:#b7c3d5;margin-top:25px;">Pricing available in Nigerian Naira (₦) and US Dollars ($). Contact us for a quote.</p>
+</section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Starter Package</h3>
-        <p>For individuals and small businesses.</p>
-        <div class="price">₦50,000</div>
-        <p>$40 USD</p>
-        <p>• Basic website design</p>
-        <p>• Up to 3 pages</p>
-        <p>• Mobile-friendly layout</p>
-        <p>• Contact section</p>
-        <a class="btn" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20the%20Starter%20Package.">Choose Package</a>
-      </div>
-
-      <div class="card">
-        <h3>Business Package</h3>
-        <p>For growing businesses and brands.</p>
-        <div class="price">₦120,000</div>
-        <p>$90 USD</p>
-        <p>• Professional website</p>
-        <p>• Up to 6 pages</p>
-        <p>• Mobile-friendly layout</p>
-        <p>• WhatsApp contact button</p>
-        <a class="btn" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20the%20Business%20Package.">Choose Package</a>
-      </div>
-
-      <div class="card">
-        <h3>Premium Package</h3>
-        <p>For established businesses and bigger projects.</p>
-        <div class="price">₦250,000</div>
-        <p>$180 USD</p>
-        <p>• Advanced website design</p>
-        <p>• Up to 10 pages</p>
-        <p>• Responsive layout</p>
-        <p>• Enhanced features</p>
-        <a class="btn" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20the%20Premium%20Package.">Choose Package</a>
-      </div>
-    </div>
-
-    <p class="note">Prices are starting estimates. Final quotes depend on project requirements, features and content.</p>
-  </div>
+<section class="about" id="about">
+<div class="section-title"><h2>About <span>JossWeb Designs</span></h2></div>
+<div class="about-content">
+<p>JossWeb Designs is a creative web design brand focused on building modern, attractive and user-friendly websites for businesses, entrepreneurs and individuals.</p>
+<p style="margin-top:18px;">Our mission is to help brands establish a strong online presence through thoughtful design and digital creativity.</p>
+</div>
 </section>
 
 <section class="contact" id="contact">
-  <div class="container">
-    <h2>Let's Build Your Website</h2>
-    <p>Ready to take your business online? Contact JossWeb Designs today.</p>
-    <p>Email: primepathng@gmail.com</p>
-    <p>Phone / WhatsApp: 07055450446</p>
-    <a class="btn" href="https://wa.me/2347055450446">Chat With Us on WhatsApp</a>
-  </div>
+<div class="section-title">
+<h2>Let's Build <span>Something Great</span></h2>
+<p>Have a website idea? Let's bring your vision to life.</p>
+</div>
+<p>Tell us about your project and let's discuss how we can help.</p>
+<div class="buttons" style="justify-content:center;">
+<a class="button" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20a%20website.">Chat on WhatsApp</a>
+<a class="button button-outline" href="mailto:primepathng@gmail.com?subject=Website%20Project%20Enquiry">Send an Email</a>
+</div>
+<p style="margin-top:25px;">Phone: 07055450446<br>Email: primepathng@gmail.com</p>
 </section>
+</main>
 
 <footer>
-  <p>© 2026 <span>JossWeb Designs</span>. All rights reserved.</p>
-  <p>Your Vision. Our Design.</p>
+<strong>JossWeb Designs</strong>
+<p>Your Vision. Our Design.</p>
+<p>© 2026 JossWeb Designs. All rights reserved.</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/2347055450446" target="_blank" rel="noopener">WhatsApp</a>
 
 </body>
 </html>
