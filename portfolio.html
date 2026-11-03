@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Portfolio | JossWeb Designs</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #071426;
+  color: #f4f6fa;
+  line-height: 1.7;
+}
+
+header {
+  background: #091a30;
+  padding: 20px 7%;
+  border-bottom: 1px solid #24364c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  color: #f0c75e;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo span {
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #d8dfeb;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f0c75e;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 7%;
+  background: linear-gradient(135deg,#071426,#163354);
+}
+
+.hero small {
+  color: #f0c75e;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(36px,6vw,55px);
+  margin: 15px 0;
+}
+
+.hero h1 span {
+  color: #f0c75e;
+}
+
+.hero p {
+  color: #b7c3d5;
+  max-width: 600px;
+  margin: auto;
+}
+
+main {
+  padding: 75px 7%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading h2 {
+  font-size: 32px;
+}
+
+.heading h2 span {
+  color: #f0c75e;
+}
+
+.heading p {
+  color: #b7c3d5;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 25px;
+}
+
+.project {
+  background: #10233c;
+  border: 1px solid #263d59;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+  border-color: #f0c75e;
+}
+
+.preview {
+  height: 190px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.restaurant {
+  background: linear-gradient(135deg,#442c1d,#a66b34);
+}
+
+.fashion {
+  background: linear-gradient(135deg,#151515,#585858);
+}
+
+.business {
+  background: linear-gradient(135deg,#10294a,#23608a);
+}
+
+.portfolio {
+  background: linear-gradient(135deg,#3b1c4b,#8655a2);
+}
+
+.preview h3 {
+  font-size: 25px;
+  color: white;
+}
+
+.preview p {
+  font-size: 12px;
+  color: #eee;
+}
+
+.details {
+  padding: 22px;
+}
+
+.details h3 {
+  color: #f0c75e;
+  margin-bottom: 8px;
+}
+
+.details p {
+  color: #b7c3d5;
+  font-size: 14px;
+}
+
+.details small {
+  display: inline-block;
+  margin-top: 12px;
+  color: #f0c75e;
+}
+
+.cta {
+  margin-top: 70px;
+  text-align: center;
+  padding: 55px 20px;
+  background: #10233c;
+  border: 1px solid #263d59;
+  border-radius: 12px;
+}
+
+.cta h2 {
+  color: #f0c75e;
+  margin-bottom: 12px;
+}
+
+.cta p {
+  color: #b7c3d5;
+  margin-bottom: 25px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #f0c75e;
+  color: #071426;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 28px;
+  background: #091a30;
+  color: #b7c3d5;
+  font-size: 13px;
+}
+
+footer strong {
+  color: #f0c75e;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">JW <span>| JossWeb Designs</span></a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <small>CREATIVITY MEETS TECHNOLOGY</small>
+  <h1>Our Creative <span>Portfolio</span></h1>
+  <p>
+    Explore sample website concepts demonstrating
+    the creative digital experiences JossWeb Designs
+    can build for businesses and brands.
+  </p>
+</section>
+
+<main>
+
+<div class="heading">
+  <h2>Featured <span>Design Concepts</span></h2>
+  <p>Discover the possibilities for your next website.</p>
+</div>
+
+<div class="projects">
+
+  <div class="project">
+    <div class="preview restaurant">
+      <h3>THE ROYAL TABLE</h3>
+      <p>Restaurant & Hospitality Concept</p>
+    </div>
+    <div class="details">
+      <h3>Restaurant Website</h3>
+      <p>A stylish website concept for restaurants, lounges and hospitality businesses.</p>
+      <small>DESIGN CONCEPT 01</small>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="preview fashion">
+      <h3>ÉLÉGANCE</h3>
+      <p>Fashion & Lifestyle Concept</p>
+    </div>
+    <div class="details">
+      <h3>Fashion Store</h3>
+      <p>A modern digital storefront concept for fashion brands and clothing businesses.</p>
+      <small>DESIGN CONCEPT 02</small>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="preview business">
+      <h3>NOVA BUSINESS</h3>
+      <p>Corporate & Professional Concept</p>
+    </div>
+    <div class="details">
+      <h3>Corporate Website</h3>
+      <p>A professional online presence concept for companies and growing businesses.</p>
+      <small>DESIGN CONCEPT 03</small>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="preview portfolio">
+      <h3>CREATIVE SPACE</h3>
+      <p>Personal Branding Concept</p>
+    </div>
+    <div class="details">
+      <h3>Personal Portfolio</h3>
+      <p>A creative showcase concept for freelancers, photographers and professionals.</p>
+      <small>DESIGN CONCEPT 04</small>
+    </div>
+  </div>
+
+</div>
+
+<div class="cta">
+  <h2>Have a Project in Mind?</h2>
+  <p>Let's create a website that makes your business stand out.</p>
+  <a class="button"
+     href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20want%20a%20website.">
+     Start Your Project
+  </a>
+</div>
+
+</main>
+
+<footer>
+  <strong>JossWeb Designs</strong>
+  <p>Your Vision. Our Design.</p>
+  <p>© 2026 JossWeb Designs. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
