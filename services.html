@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore professional website design services and pricing from JossWeb Designs.">
 <title>Services & Pricing | JossWeb Designs</title>
 
 <style>
@@ -13,39 +14,40 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: Arial, sans-serif;
   background: #071426;
-  color: #c6d0df;
-  line-height: 1.7;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
 header {
-  background: #10233c;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #f0c75e;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 1px solid #26364a;
+  background: #0b1d33;
 }
 
 .logo {
   color: #f0c75e;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 nav {
-  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  margin: 7px;
-  display: inline-block;
+  font-size: 14px;
 }
 
 nav a:hover {
@@ -54,105 +56,143 @@ nav a:hover {
 
 .hero {
   text-align: center;
-  padding: 75px 20px;
-  background: linear-gradient(135deg, #071426, #10294a);
+  padding: 65px 20px 35px;
 }
 
 .hero h1 {
   color: #f0c75e;
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 38px;
+  margin-bottom: 12px;
 }
 
 .hero p {
-  max-width: 650px;
+  color: #cbd5e1;
+  max-width: 600px;
   margin: auto;
 }
 
-section {
-  padding: 55px 20px;
-  text-align: center;
-}
-
-h2 {
-  color: #f0c75e;
-  font-size: 29px;
-  margin-bottom: 25px;
-}
-
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.cards {
+.pricing {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 35px 8% 65px;
 }
 
 .card {
-  background: #10233c;
-  padding: 25px;
-  border: 1px solid #263d59;
-  border-radius: 12px;
-  text-align: left;
+  background: #10233b;
+  border: 1px solid #34445a;
+  border-radius: 14px;
+  padding: 30px 24px;
+  text-align: center;
+  transition: 0.3s;
 }
 
-.card h3 {
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #f0c75e;
+}
+
+.card h2 {
   color: #f0c75e;
   margin-bottom: 12px;
 }
 
-.card p {
-  margin-bottom: 10px;
+.price {
+  color: #f0c75e;
+  font-size: 29px;
+  font-weight: bold;
+  margin: 12px 0 3px;
 }
 
-.price {
-  font-size: 25px;
+.usd {
+  color: #cbd5e1;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.card li {
+  padding: 8px 0;
+  border-bottom: 1px solid #293c54;
+}
+
+.card li::before {
+  content: "✓ ";
   color: #f0c75e;
   font-weight: bold;
-  margin: 15px 0;
 }
 
-.btn {
+.button {
   display: inline-block;
   background: #f0c75e;
   color: #071426;
-  padding: 12px 22px;
-  margin-top: 15px;
-  border-radius: 6px;
   text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 7px;
   font-weight: bold;
+  margin-top: 12px;
 }
 
-.btn:hover {
-  background: white;
+.button:hover {
+  background: #ffffff;
 }
 
 .note {
-  margin-top: 25px;
-  font-size: 14px;
-  color: #aebbd0;
+  text-align: center;
+  padding: 0 20px 55px;
+  color: #cbd5e1;
 }
 
 .contact {
-  background: #0c1c31;
+  background: #10233b;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+.contact h2 {
+  color: #f0c75e;
+  margin-bottom: 12px;
 }
 
 .contact p {
-  margin: 8px 0;
+  color: #cbd5e1;
 }
 
 footer {
   text-align: center;
-  padding: 25px;
-  background: #10233c;
-  border-top: 1px solid #263d59;
+  padding: 22px;
+  color: #aab6c5;
+  font-size: 14px;
 }
 
-footer span {
-  color: #f0c75e;
+@media (max-width: 600px) {
+  header {
+    padding: 18px 5%;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .pricing {
+    padding: 25px 6% 50px;
+  }
 }
 </style>
 </head>
@@ -163,117 +203,88 @@ footer span {
   <div class="logo">JossWeb Designs</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="#services">Services</a>
+    <a href="services.html">Services & Pricing</a>
     <a href="portfolio.html">Portfolio</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html#contact">Contact</a>
   </nav>
 </header>
 
-<div class="hero">
+<section class="hero">
   <h1>Our Services & Pricing</h1>
-  <p>Professional website design solutions to help businesses, brands and individuals grow online.</p>
-  <a href="#services" class="btn">Explore Our Services</a>
+  <p>
+    Professional websites designed to help your business
+    stand out online. Choose the package that suits you.
+  </p>
+</section>
+
+<section class="pricing">
+
+  <div class="card">
+    <h2>Starter Website</h2>
+    <p>Perfect for individuals and small businesses.</p>
+    <div class="price">₦75,000</div>
+    <div class="usd">$75 USD</div>
+    <ul>
+      <li>One-page website</li>
+      <li>Mobile-friendly design</li>
+      <li>Business information</li>
+      <li>Contact button</li>
+      <li>Basic website layout</li>
+    </ul>
+    <a class="button" href="mailto:primepathng@gmail.com?subject=Starter%20Website%20Enquiry">Choose Package</a>
+  </div>
+
+  <div class="card">
+    <h2>Business Website</h2>
+    <p>For growing businesses that need more features.</p>
+    <div class="price">₦150,000</div>
+    <div class="usd">$150 USD</div>
+    <ul>
+      <li>Up to 5 pages</li>
+      <li>Professional design</li>
+      <li>WhatsApp and email links</li>
+      <li>Services and pricing section</li>
+      <li>Mobile-friendly layout</li>
+    </ul>
+    <a class="button" href="mailto:primepathng@gmail.com?subject=Business%20Website%20Enquiry">Choose Package</a>
+  </div>
+
+  <div class="card">
+    <h2>Premium Website</h2>
+    <p>For brands that want a more complete online presence.</p>
+    <div class="price">₦300,000</div>
+    <div class="usd">$300 USD</div>
+    <ul>
+      <li>Up to 10 pages</li>
+      <li>Premium custom design</li>
+      <li>Advanced contact features</li>
+      <li>Portfolio or gallery</li>
+      <li>Basic SEO setup</li>
+    </ul>
+    <a class="button" href="mailto:primepathng@gmail.com?subject=Premium%20Website%20Enquiry">Choose Package</a>
+  </div>
+
+</section>
+
+<div class="note">
+  Prices are starting prices. Domain, hosting, maintenance
+  and advanced features may cost extra.
+  <br>
+  International customers can pay in US dollars.
 </div>
 
-<section id="services">
-  <div class="container">
-    <h2>What We Offer</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Business Websites</h3>
-        <p>Professional websites that introduce your business and attract customers.</p>
-      </div>
-
-      <div class="card">
-        <h3>Online Stores</h3>
-        <p>Beautiful online shop designs to display products and help customers shop.</p>
-      </div>
-
-      <div class="card">
-        <h3>Portfolio Websites</h3>
-        <p>Showcase your skills, experience and projects with a professional portfolio.</p>
-      </div>
-
-      <div class="card">
-        <h3>Restaurant Websites</h3>
-        <p>Display menus, services, contact details and restaurant information online.</p>
-      </div>
-
-      <div class="card">
-        <h3>Mobile-Friendly Design</h3>
-        <p>Websites designed to look good on phones, tablets and computers.</p>
-      </div>
-
-      <div class="card">
-        <h3>Website Updates</h3>
-        <p>Improve existing websites with fresh content, layouts and design updates.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="pricing">
-  <div class="container">
-    <h2>Our Website Packages</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Starter Package</h3>
-        <p>For individuals and small businesses.</p>
-        <div class="price">₦50,000</div>
-        <p>$40 USD</p>
-        <p>• Basic website design</p>
-        <p>• Up to 3 pages</p>
-        <p>• Mobile-friendly layout</p>
-        <p>• Contact section</p>
-        <a class="btn" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20the%20Starter%20Package.">Choose Package</a>
-      </div>
-
-      <div class="card">
-        <h3>Business Package</h3>
-        <p>For growing businesses and brands.</p>
-        <div class="price">₦120,000</div>
-        <p>$90 USD</p>
-        <p>• Professional website</p>
-        <p>• Up to 6 pages</p>
-        <p>• Mobile-friendly layout</p>
-        <p>• WhatsApp contact button</p>
-        <a class="btn" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20the%20Business%20Package.">Choose Package</a>
-      </div>
-
-      <div class="card">
-        <h3>Premium Package</h3>
-        <p>For established businesses and bigger projects.</p>
-        <div class="price">₦250,000</div>
-        <p>$180 USD</p>
-        <p>• Advanced website design</p>
-        <p>• Up to 10 pages</p>
-        <p>• Responsive layout</p>
-        <p>• Enhanced features</p>
-        <a class="btn" href="https://wa.me/2347055450446?text=Hello%20JossWeb%20Designs%2C%20I%20am%20interested%20in%20the%20Premium%20Package.">Choose Package</a>
-      </div>
-    </div>
-
-    <p class="note">Prices are starting estimates. Final quotes depend on project requirements, features and content.</p>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <div class="container">
-    <h2>Let's Build Your Website</h2>
-    <p>Ready to take your business online? Contact JossWeb Designs today.</p>
-    <p>Email: primepathng@gmail.com</p>
-    <p>Phone / WhatsApp: 07055450446</p>
-    <a class="btn" href="https://wa.me/2347055450446">Chat With Us on WhatsApp</a>
-  </div>
+<section class="contact">
+  <h2>Ready to Build Your Website?</h2>
+  <p>Let's bring your business online.</p>
+  <a class="button" href="mailto:primepathng@gmail.com?subject=Website%20Design%20Enquiry">
+    Contact JossWeb Designs
+  </a>
 </section>
 
 <footer>
-  <p>© 2026 <span>JossWeb Designs</span>. All rights reserved.</p>
-  <p>Your Vision. Our Design.</p>
+  © 2026 JossWeb Designs. All Rights Reserved.
 </footer>
 
 </body>
-</html>
+  </html>
+  
